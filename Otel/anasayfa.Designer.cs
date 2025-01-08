@@ -28,18 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtno = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnsil = new System.Windows.Forms.Button();
             this.btnregu = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btnresil = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.mskreztc = new System.Windows.Forms.MaskedTextBox();
             this.txtrezsoy = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,12 +50,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnresil = new System.Windows.Forms.Button();
-            this.btnKontrol = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.lblsaat = new System.Windows.Forms.Label();
+            this.lbltarih = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +63,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 136);
+            this.button1.Location = new System.Drawing.Point(14, 374);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 58);
             this.button1.TabIndex = 0;
@@ -74,38 +71,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(109, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 22);
-            this.textBox1.TabIndex = 1;
-            // 
             // txtno
             // 
-            this.txtno.Location = new System.Drawing.Point(109, 93);
+            this.txtno.Location = new System.Drawing.Point(92, 319);
             this.txtno.Name = "txtno";
             this.txtno.Size = new System.Drawing.Size(129, 22);
             this.txtno.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(20, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 36);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "ODA ID:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(0, 313);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 36);
+            this.label2.Size = new System.Drawing.Size(86, 34);
             this.label2.TabIndex = 4;
             this.label2.Text = "ODA NO:";
             // 
@@ -113,7 +92,7 @@
             // 
             this.btnsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsil.Location = new System.Drawing.Point(152, 136);
+            this.btnsil.Location = new System.Drawing.Point(149, 374);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(129, 58);
             this.btnsil.TabIndex = 5;
@@ -125,7 +104,7 @@
             // 
             this.btnregu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregu.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregu.Location = new System.Drawing.Point(340, 252);
+            this.btnregu.Location = new System.Drawing.Point(646, 23);
             this.btnregu.Name = "btnregu";
             this.btnregu.Size = new System.Drawing.Size(129, 58);
             this.btnregu.TabIndex = 6;
@@ -133,86 +112,46 @@
             this.btnregu.UseVisualStyleBackColor = true;
             this.btnregu.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.IndianRed;
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.btnsil);
-            this.groupBox1.Controls.Add(this.txtno);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 350);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(299, 9);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 74);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(206, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(206, 221);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
-            // groupBox2
+            // btnresil
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.IndianRed;
-            this.groupBox2.Controls.Add(this.btnKontrol);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.btnresil);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.mskreztc);
-            this.groupBox2.Controls.Add(this.txtrezsoy);
-            this.groupBox2.Controls.Add(this.btnregu);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dtcik);
-            this.groupBox2.Controls.Add(this.dtgir);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.txtrezoda);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtrezad);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(530, 21);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(648, 336);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.btnresil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnresil.Location = new System.Drawing.Point(646, 237);
+            this.btnresil.Name = "btnresil";
+            this.btnresil.Size = new System.Drawing.Size(129, 58);
+            this.btnresil.TabIndex = 8;
+            this.btnresil.Text = "sil";
+            this.btnresil.UseVisualStyleBackColor = true;
+            this.btnresil.Click += new System.EventHandler(this.btnresil_Click);
             // 
-            // textBox2
+            // button2
             // 
-            this.textBox2.Location = new System.Drawing.Point(429, 26);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 22);
-            this.textBox2.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(387, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 34);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "ID:";
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(646, 128);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 58);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "ekle";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // mskreztc
             // 
-            this.mskreztc.Location = new System.Drawing.Point(161, 122);
+            this.mskreztc.Location = new System.Drawing.Point(427, 109);
             this.mskreztc.Mask = "00000000000";
             this.mskreztc.Name = "mskreztc";
             this.mskreztc.Size = new System.Drawing.Size(129, 22);
@@ -221,7 +160,7 @@
             // 
             // txtrezsoy
             // 
-            this.txtrezsoy.Location = new System.Drawing.Point(161, 72);
+            this.txtrezsoy.Location = new System.Drawing.Point(427, 59);
             this.txtrezsoy.Name = "txtrezsoy";
             this.txtrezsoy.Size = new System.Drawing.Size(129, 22);
             this.txtrezsoy.TabIndex = 4;
@@ -230,7 +169,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(68, 72);
+            this.label8.Location = new System.Drawing.Point(334, 59);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 34);
             this.label8.TabIndex = 20;
@@ -238,14 +177,14 @@
             // 
             // dtcik
             // 
-            this.dtcik.Location = new System.Drawing.Point(448, 125);
+            this.dtcik.Location = new System.Drawing.Point(427, 273);
             this.dtcik.Name = "dtcik";
             this.dtcik.Size = new System.Drawing.Size(200, 22);
             this.dtcik.TabIndex = 8;
             // 
             // dtgir
             // 
-            this.dtgir.Location = new System.Drawing.Point(448, 72);
+            this.dtgir.Location = new System.Drawing.Point(427, 217);
             this.dtgir.Name = "dtgir";
             this.dtgir.Size = new System.Drawing.Size(200, 22);
             this.dtgir.TabIndex = 7;
@@ -254,7 +193,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(303, 125);
+            this.label7.Location = new System.Drawing.Point(293, 261);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 34);
             this.label7.TabIndex = 16;
@@ -262,7 +201,7 @@
             // 
             // txtrezoda
             // 
-            this.txtrezoda.Location = new System.Drawing.Point(161, 163);
+            this.txtrezoda.Location = new System.Drawing.Point(427, 164);
             this.txtrezoda.Name = "txtrezoda";
             this.txtrezoda.Size = new System.Drawing.Size(129, 22);
             this.txtrezoda.TabIndex = 6;
@@ -271,7 +210,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 122);
+            this.label5.Location = new System.Drawing.Point(284, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 34);
             this.label5.TabIndex = 14;
@@ -281,7 +220,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(302, 72);
+            this.label6.Location = new System.Drawing.Point(292, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 34);
             this.label6.TabIndex = 15;
@@ -289,7 +228,7 @@
             // 
             // txtrezad
             // 
-            this.txtrezad.Location = new System.Drawing.Point(161, 26);
+            this.txtrezad.Location = new System.Drawing.Point(427, 13);
             this.txtrezad.Name = "txtrezad";
             this.txtrezad.Size = new System.Drawing.Size(129, 22);
             this.txtrezad.TabIndex = 3;
@@ -298,7 +237,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 26);
+            this.label4.Location = new System.Drawing.Point(367, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 34);
             this.label4.TabIndex = 10;
@@ -308,7 +247,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 163);
+            this.label3.Location = new System.Drawing.Point(324, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 34);
             this.label3.TabIndex = 11;
@@ -317,85 +256,112 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 368);
+            this.dataGridView2.Location = new System.Drawing.Point(304, 313);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1048, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(890, 210);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // button2
+            // lblsaat
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(340, 188);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 58);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "ekle";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.lblsaat.AutoSize = true;
+            this.lblsaat.BackColor = System.Drawing.Color.Transparent;
+            this.lblsaat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsaat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblsaat.Location = new System.Drawing.Point(955, 57);
+            this.lblsaat.Name = "lblsaat";
+            this.lblsaat.Size = new System.Drawing.Size(55, 23);
+            this.lblsaat.TabIndex = 21;
+            this.lblsaat.Text = "00.00";
             // 
-            // btnresil
+            // lbltarih
             // 
-            this.btnresil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresil.Location = new System.Drawing.Point(488, 188);
-            this.btnresil.Name = "btnresil";
-            this.btnresil.Size = new System.Drawing.Size(129, 58);
-            this.btnresil.TabIndex = 8;
-            this.btnresil.Text = "sil";
-            this.btnresil.UseVisualStyleBackColor = true;
-            this.btnresil.Click += new System.EventHandler(this.btnresil_Click);
+            this.lbltarih.AutoSize = true;
+            this.lbltarih.BackColor = System.Drawing.Color.Transparent;
+            this.lbltarih.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbltarih.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbltarih.Location = new System.Drawing.Point(955, 23);
+            this.lbltarih.Name = "lbltarih";
+            this.lbltarih.Size = new System.Drawing.Size(82, 23);
+            this.lbltarih.TabIndex = 22;
+            this.lbltarih.Text = "00/00/00";
             // 
-            // btnKontrol
+            // timer1
             // 
-            this.btnKontrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKontrol.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKontrol.Location = new System.Drawing.Point(488, 252);
-            this.btnKontrol.Name = "btnKontrol";
-            this.btnKontrol.Size = new System.Drawing.Size(129, 58);
-            this.btnKontrol.TabIndex = 10;
-            this.btnKontrol.Text = "kontrol";
-            this.btnKontrol.UseVisualStyleBackColor = true;
-            this.btnKontrol.Click += new System.EventHandler(this.btnKontrol_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(885, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "TARİH:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(885, 58);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 22);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "SAAT:";
             // 
             // anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
-            this.ClientSize = new System.Drawing.Size(1181, 535);
+            this.ClientSize = new System.Drawing.Size(1195, 535);
+            this.Controls.Add(this.lbltarih);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblsaat);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.mskreztc);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtrezsoy);
+            this.Controls.Add(this.btnsil);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dtcik);
+            this.Controls.Add(this.btnresil);
+            this.Controls.Add(this.dtgir);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtrezoda);
+            this.Controls.Add(this.txtno);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtrezad);
+            this.Controls.Add(this.btnregu);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Name = "anasayfa";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtno;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnsil;
         private System.Windows.Forms.Button btnregu;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtrezoda;
         private System.Windows.Forms.Label label5;
@@ -411,8 +377,10 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnresil;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnKontrol;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblsaat;
+        private System.Windows.Forms.Label lbltarih;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
     }
 }

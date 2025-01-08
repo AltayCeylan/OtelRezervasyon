@@ -30,9 +30,9 @@ namespace Otel.businneslogic
         }
 
       private dalrez _dalrez= new dalrez();
-        public bool rezguncelle(int musteriId, string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
+        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
         {
-            return _dalrez.rezguncelle(musteriId, musteriad, musterisoyad,musteriTc,odaNo, giris, cikis);
+            return _dalrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad,musteriTc,odaNo, giris, cikis);
         }
 
 

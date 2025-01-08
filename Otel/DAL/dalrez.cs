@@ -39,13 +39,13 @@ namespace Otel.DAL
             }
         private string connectionstring = "Server=172.21.54.253; Database=25_132330046; Uid=25_132330046; Pwd=!nif.ogr46CE";
         
-        public bool rezguncelle(int musteriId, string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
+        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
         {
             using(MySqlConnection conn = new MySqlConnection(connectionstring))
             {
                 string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik where MusteriId=@ıd";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ıd", musteriId);
+               // cmd.Parameters.AddWithValue("@ıd", musteriId);
                 cmd.Parameters.AddWithValue("@ad", musteriad);
                 cmd.Parameters.AddWithValue("@soyad", musterisoyad);
                 cmd.Parameters.AddWithValue("@tc", musteriTc);
