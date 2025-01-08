@@ -45,7 +45,7 @@ namespace Otel.DAL
             {
                 string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik where MusteriId=@ıd";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-               // cmd.Parameters.AddWithValue("@ıd", musteriId);
+              
                 cmd.Parameters.AddWithValue("@ad", musteriad);
                 cmd.Parameters.AddWithValue("@soyad", musterisoyad);
                 cmd.Parameters.AddWithValue("@tc", musteriTc);
@@ -60,7 +60,7 @@ namespace Otel.DAL
         }
     }
  }
-//
+
 
         
 

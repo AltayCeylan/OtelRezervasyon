@@ -188,6 +188,7 @@
             this.dtgir.Name = "dtgir";
             this.dtgir.Size = new System.Drawing.Size(200, 22);
             this.dtgir.TabIndex = 7;
+            this.dtgir.ValueChanged += new System.EventHandler(this.dtgir_ValueChanged);
             // 
             // label7
             // 

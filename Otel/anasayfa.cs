@@ -107,6 +107,18 @@ namespace Otel
             DataTable dt2 = bl2.dataiçinveriçek();
             dataGridView2.DataSource = dt2;
 
+            if (dtcik.Value <= dtgir.Value)
+            {
+                MessageBox.Show("Çıkış tarihi, giriş tarihinden sonraki bir tarih olmalıdır.");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Rezevasyon Oluşturuldu.");
+            }
+                
+            
+
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -160,6 +172,11 @@ namespace Otel
 
             lblsaat.Text = DateTime.Now.ToLongTimeString();
             lbltarih.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void dtgir_ValueChanged(object sender, EventArgs e)
+        {
+            dtcik.MinDate = dtgir.Value;
         }
     }
 }

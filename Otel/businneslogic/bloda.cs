@@ -30,5 +30,6 @@ namespace Otel.businneslogic
             daloda dal1=new daloda();
             return dal1.vericek();
         }
+       
     }
 }
