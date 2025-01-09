@@ -25,7 +25,7 @@ namespace Otel.DAL
         {
             using (MySqlConnection conn = new MySqlConnection("Server=172.21.54.253; Database=25_132330046; Uid=25_132330046; Pwd=!nif.ogr46CE"))
             {
-                using (MySqlCommand cmd = new MySqlCommand("select odaNo from tbl_oda", conn)) 
+                using (MySqlCommand cmd = new MySqlCommand("select odaNo,odaDurum from tbl_oda", conn))
                 {
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
@@ -34,5 +34,7 @@ namespace Otel.DAL
                 }
             }
         }
+            
     }
+    
 }

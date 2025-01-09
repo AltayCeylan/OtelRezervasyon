@@ -8,17 +8,19 @@ namespace Otel.EntityLayer
 {
     internal class elrez
     {
+        
         public int musteriıd;
         private string musteriaAd;
         private string musteriSoyad;
         private long musteriTc;
         private int odaNo;
-        private string giris;
+         private string giris;
         private string cikis;
         
 
 
 
+        
         public string MUSTERİAD { get { return musteriaAd; } set { musteriaAd = value; } }
         public string MUSTERİSOYAD { get { return musteriSoyad; } set { musteriSoyad = value; } }
         public long MUSTERİTC{ get { return musteriTc; } set { musteriTc = value; } }
@@ -29,7 +31,7 @@ namespace Otel.EntityLayer
 
         public elrez(string musteriad,string musterisoyad,long musteriTc,int odaNo,string giris,string cikis)
         {
-            
+           
             this.musteriaAd = musteriad;
             this.musteriSoyad= musterisoyad;
             this.musteriTc= musteriTc;

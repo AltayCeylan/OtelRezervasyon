@@ -15,21 +15,23 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Otel
 {
-    
+
     public partial class anasayfa : Form
     {
+
+
         private blrez _blrez = new blrez();
 
         public anasayfa()
         {
             InitializeComponent();
-            
+
         }
 
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            bloda bll= new bloda();
+            bloda bll = new bloda();
             DataTable dt = bll.dataiçinveriçek();
             dataGridView1.DataSource = dt;
 
@@ -38,6 +40,9 @@ namespace Otel
             dataGridView2.DataSource = dt2;
 
             timer1.Start();
+
+
+
 
         }
 
@@ -65,12 +70,13 @@ namespace Otel
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
         }
+       
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+           
 
-            int secilen = dataGridView1.SelectedCells[0].RowIndex;
-            txtno.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -81,15 +87,15 @@ namespace Otel
         private void btnguncelle_Click(object sender, EventArgs e)
         {
             //int musteriId = Convert.ToInt16(textBox2.Text);
-            string musteriad=txtrezad.Text;
-            string musterisoyad=txtrezsoy.Text;
-            long musteriTc=Convert.ToInt64(mskreztc.Text);
-            int odaNo=Convert.ToInt32(txtrezoda.Text);
-            string giris=dtgir.Text;
-            string cikis=dtcik.Text;
-            
+            string musteriad = txtrezad.Text;
+            string musterisoyad = txtrezsoy.Text;
+            long musteriTc = Convert.ToInt64(mskreztc.Text);
+            int odaNo = Convert.ToInt32(txtrezoda.Text);
+            string giris = dtgir.Text;
+            string cikis = dtcik.Text;
 
-            bool isUpdated=_blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad,musteriTc,odaNo, giris,cikis);
+
+            bool isUpdated = _blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad, musteriTc, odaNo, giris, cikis);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();
@@ -101,7 +107,7 @@ namespace Otel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text,Convert.ToInt64( mskreztc.Text), Convert.ToInt16(txtrezoda.Text), dtgir.Text,dtcik.Text);
+            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text, Convert.ToInt64(mskreztc.Text), Convert.ToInt16(txtrezoda.Text), dtgir.Text, dtcik.Text);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();
@@ -116,8 +122,8 @@ namespace Otel
             {
                 MessageBox.Show("Rezevasyon Oluşturuldu.");
             }
-                
-            
+
+
 
         }
 
@@ -152,7 +158,7 @@ namespace Otel
             txtrezoda.Text = dataGridView2.Rows[secilen].Cells[3].Value.ToString();
             dtgir.Text = dataGridView2.Rows[secilen].Cells[4].Value.ToString();
             dtcik.Text = dataGridView2.Rows[secilen].Cells[5].Value.ToString();
-           
+
 
 
         }
@@ -164,7 +170,7 @@ namespace Otel
 
         private void btnKontrol_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -178,5 +184,35 @@ namespace Otel
         {
             dtcik.MinDate = dtgir.Value;
         }
+
+
+
+        private void btnkont_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+
+
+            }
+        }
     }
-}

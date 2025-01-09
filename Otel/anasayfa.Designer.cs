@@ -63,7 +63,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(14, 374);
+            this.button1.Location = new System.Drawing.Point(4, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 58);
             this.button1.TabIndex = 0;
@@ -73,7 +73,7 @@
             // 
             // txtno
             // 
-            this.txtno.Location = new System.Drawing.Point(92, 319);
+            this.txtno.Location = new System.Drawing.Point(113, 272);
             this.txtno.Name = "txtno";
             this.txtno.Size = new System.Drawing.Size(129, 22);
             this.txtno.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(0, 313);
+            this.label2.Location = new System.Drawing.Point(21, 266);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 34);
             this.label2.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.btnsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsil.Location = new System.Drawing.Point(149, 374);
+            this.btnsil.Location = new System.Drawing.Point(139, 313);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(129, 58);
             this.btnsil.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             this.btnregu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregu.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregu.Location = new System.Drawing.Point(646, 23);
+            this.btnregu.Location = new System.Drawing.Point(732, 22);
             this.btnregu.Name = "btnregu";
             this.btnregu.Size = new System.Drawing.Size(129, 58);
             this.btnregu.TabIndex = 6;
@@ -115,21 +115,23 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(206, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(346, 221);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // btnresil
             // 
             this.btnresil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresil.Location = new System.Drawing.Point(646, 237);
+            this.btnresil.Location = new System.Drawing.Point(732, 237);
             this.btnresil.Name = "btnresil";
             this.btnresil.Size = new System.Drawing.Size(129, 58);
             this.btnresil.TabIndex = 8;
@@ -141,7 +143,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(646, 128);
+            this.button2.Location = new System.Drawing.Point(732, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 58);
             this.button2.TabIndex = 8;
@@ -151,7 +153,7 @@
             // 
             // mskreztc
             // 
-            this.mskreztc.Location = new System.Drawing.Point(427, 109);
+            this.mskreztc.Location = new System.Drawing.Point(518, 109);
             this.mskreztc.Mask = "00000000000";
             this.mskreztc.Name = "mskreztc";
             this.mskreztc.Size = new System.Drawing.Size(129, 22);
@@ -160,7 +162,7 @@
             // 
             // txtrezsoy
             // 
-            this.txtrezsoy.Location = new System.Drawing.Point(427, 59);
+            this.txtrezsoy.Location = new System.Drawing.Point(518, 59);
             this.txtrezsoy.Name = "txtrezsoy";
             this.txtrezsoy.Size = new System.Drawing.Size(129, 22);
             this.txtrezsoy.TabIndex = 4;
@@ -169,7 +171,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(334, 59);
+            this.label8.Location = new System.Drawing.Point(425, 59);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 34);
             this.label8.TabIndex = 20;
@@ -177,14 +179,14 @@
             // 
             // dtcik
             // 
-            this.dtcik.Location = new System.Drawing.Point(427, 273);
+            this.dtcik.Location = new System.Drawing.Point(518, 273);
             this.dtcik.Name = "dtcik";
             this.dtcik.Size = new System.Drawing.Size(200, 22);
             this.dtcik.TabIndex = 8;
             // 
             // dtgir
             // 
-            this.dtgir.Location = new System.Drawing.Point(427, 217);
+            this.dtgir.Location = new System.Drawing.Point(513, 217);
             this.dtgir.Name = "dtgir";
             this.dtgir.Size = new System.Drawing.Size(200, 22);
             this.dtgir.TabIndex = 7;
@@ -194,7 +196,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(293, 261);
+            this.label7.Location = new System.Drawing.Point(384, 261);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 34);
             this.label7.TabIndex = 16;
@@ -202,7 +204,7 @@
             // 
             // txtrezoda
             // 
-            this.txtrezoda.Location = new System.Drawing.Point(427, 164);
+            this.txtrezoda.Location = new System.Drawing.Point(518, 164);
             this.txtrezoda.Name = "txtrezoda";
             this.txtrezoda.Size = new System.Drawing.Size(129, 22);
             this.txtrezoda.TabIndex = 6;
@@ -211,7 +213,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(284, 109);
+            this.label5.Location = new System.Drawing.Point(375, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 34);
             this.label5.TabIndex = 14;
@@ -221,7 +223,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(292, 208);
+            this.label6.Location = new System.Drawing.Point(383, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 34);
             this.label6.TabIndex = 15;
@@ -229,7 +231,7 @@
             // 
             // txtrezad
             // 
-            this.txtrezad.Location = new System.Drawing.Point(427, 13);
+            this.txtrezad.Location = new System.Drawing.Point(518, 13);
             this.txtrezad.Name = "txtrezad";
             this.txtrezad.Size = new System.Drawing.Size(129, 22);
             this.txtrezad.TabIndex = 3;
@@ -238,7 +240,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(367, 13);
+            this.label4.Location = new System.Drawing.Point(458, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 34);
             this.label4.TabIndex = 10;
@@ -248,7 +250,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(324, 164);
+            this.label3.Location = new System.Drawing.Point(415, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 34);
             this.label3.TabIndex = 11;

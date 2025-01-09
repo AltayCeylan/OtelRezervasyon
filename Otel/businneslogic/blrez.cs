@@ -12,10 +12,10 @@ namespace Otel.businneslogic
     internal class blrez
     {
       
-        internal void rezkaydet( string musteriAd,string musteriSoyad,long musteriTc,int odaNo,string giris,string cikis)
+        internal void rezkaydet(  string musteriAd,string musteriSoyad,long musteriTc,int odaNo,string giris,string cikis)
         {
 
-            (new dalrez()).rezkaydet(new elrez(musteriAd,musteriSoyad,musteriTc,odaNo,giris,cikis));
+            (new dalrez()).rezkaydet(new elrez( musteriAd,musteriSoyad,musteriTc,odaNo,giris,cikis));
         }
         internal void rezsil(long a)
         {
