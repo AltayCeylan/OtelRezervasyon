@@ -3,86 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\dal\\daloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\dal\\daloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\businneslogic\\bloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\businneslogic\\bloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\entitylayer\\eloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\entitylayer\\eloda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\businneslogic\\blrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\businneslogic\\blrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\dal\\dalrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\dal\\dalrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\otel\\entitylayer\\elrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\entitylayer\\elrez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|c:\\users\\altay\\onedrive\\masa\u00FCst\u00FC\\otelrezervasyon\\otel\\entitylayer\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{859345BC-35BD-4DB4-89A0-7D6957EAB76E}|Otel\\Otel.csproj|solutionrelative:otel\\entitylayer\\yoneticigiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 261,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "yoneticigiris.cs",
-              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\yoneticigiris.cs",
-              "RelativeDocumentMoniker": "Otel\\EntityLayer\\yoneticigiris.cs",
-              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\yoneticigiris.cs",
-              "RelativeToolTip": "Otel\\EntityLayer\\yoneticigiris.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwBMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:12:30.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "blrez.cs",
-              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\blrez.cs",
-              "RelativeDocumentMoniker": "Otel\\businneslogic\\blrez.cs",
-              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\blrez.cs",
-              "RelativeToolTip": "Otel\\businneslogic\\blrez.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:00:42.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dalrez.cs",
-              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\dalrez.cs",
-              "RelativeDocumentMoniker": "Otel\\DAL\\dalrez.cs",
-              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\dalrez.cs",
-              "RelativeToolTip": "Otel\\DAL\\dalrez.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:00:32.459Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -93,38 +62,143 @@
               "RelativeToolTip": "Otel\\anasayfa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T18:02:55.194Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\Program.cs",
+              "RelativeDocumentMoniker": "Otel\\Program.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\Program.cs",
+              "RelativeToolTip": "Otel\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T23:15:07.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "anasayfa.cs",
-              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\anasayfa.cs",
-              "RelativeDocumentMoniker": "Otel\\anasayfa.cs",
-              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\anasayfa.cs",
-              "RelativeToolTip": "Otel\\anasayfa.cs",
-              "ViewState": "AQIAAP0AAAAAAAAAAAAmwKMAAAAWAAAA",
+              "Title": "YoneticiGiris.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\YoneticiGiris.cs",
+              "RelativeDocumentMoniker": "Otel\\YoneticiGiris.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\YoneticiGiris.cs",
+              "RelativeToolTip": "Otel\\YoneticiGiris.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T16:41:16.071Z",
+              "WhenOpened": "2025-01-18T23:09:39.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YoneticiGiris.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\YoneticiGiris.cs",
+              "RelativeDocumentMoniker": "Otel\\YoneticiGiris.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\YoneticiGiris.cs [Design]",
+              "RelativeToolTip": "Otel\\YoneticiGiris.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T23:08:06.77Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "eloda.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\eloda.cs",
+              "RelativeDocumentMoniker": "Otel\\EntityLayer\\eloda.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\eloda.cs",
+              "RelativeToolTip": "Otel\\EntityLayer\\eloda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:58:16.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "blrez.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\blrez.cs",
+              "RelativeDocumentMoniker": "Otel\\businneslogic\\blrez.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\blrez.cs",
+              "RelativeToolTip": "Otel\\businneslogic\\blrez.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:58:00.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bloda.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\bloda.cs",
+              "RelativeDocumentMoniker": "Otel\\businneslogic\\bloda.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\businneslogic\\bloda.cs",
+              "RelativeToolTip": "Otel\\businneslogic\\bloda.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:56:34.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "daloda.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\daloda.cs",
+              "RelativeDocumentMoniker": "Otel\\DAL\\daloda.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\daloda.cs",
+              "RelativeToolTip": "Otel\\DAL\\daloda.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:51:34.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dalrez.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\dalrez.cs",
+              "RelativeDocumentMoniker": "Otel\\DAL\\dalrez.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\DAL\\dalrez.cs",
+              "RelativeToolTip": "Otel\\DAL\\dalrez.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwC0AAACjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:53:46.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "elrez.cs",
-              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\elrez.cs",
-              "RelativeDocumentMoniker": "Otel\\EntityLayer\\elrez.cs",
-              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\EntityLayer\\elrez.cs",
-              "RelativeToolTip": "Otel\\EntityLayer\\elrez.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAACLAAAA",
+              "Title": "anasayfa.cs",
+              "DocumentMoniker": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\anasayfa.cs",
+              "RelativeDocumentMoniker": "Otel\\anasayfa.cs",
+              "ToolTip": "C:\\Users\\altay\\OneDrive\\Masa\u00FCst\u00FC\\OtelRezervasyon\\Otel\\anasayfa.cs",
+              "RelativeToolTip": "Otel\\anasayfa.cs",
+              "ViewState": "AQIAAPAAAAAAAAAAAAAiwP4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:37:24.533Z",
+              "WhenOpened": "2025-01-18T22:49:58.422Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedHeight": 19,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {

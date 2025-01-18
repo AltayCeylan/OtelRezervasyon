@@ -30,6 +30,11 @@ namespace Otel.businneslogic
             daloda dal1=new daloda();
             return dal1.vericek();
         }
-       
+        private daloda _daloda = new daloda();
+        public bool rezguncelle(string odaDurum,int odaNo)
+        {
+            return _daloda.rezguncelle(odaDurum,odaNo);
+        }
+
     }
 }

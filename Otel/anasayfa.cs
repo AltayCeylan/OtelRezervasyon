@@ -19,14 +19,18 @@ namespace Otel
     public partial class anasayfa : Form
     {
         private Dictionary<string, List<string>> odaNumaralari;
+        private bloda odaBll = new bloda();
+        private DataTable odaTablosu;
 
 
         private blrez _blrez = new blrez();
+        private bloda _bloda = new bloda();
 
         public anasayfa()
         {
             InitializeComponent();
             OdaBilgileriniYukle();
+            
 
         }
 
@@ -55,6 +59,11 @@ namespace Otel
             bloda bll = new bloda();
             DataTable dt = bll.dataiçinveriçek();
             dataGridView1.DataSource = dt;
+
+            ;
+
+
+
         }
 
         private void btnsil_Click(object sender, EventArgs e)
@@ -76,7 +85,9 @@ namespace Otel
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            txtno.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            txtodadurum.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
 
 
         }
@@ -214,7 +225,7 @@ namespace Otel
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
 
 
         }
@@ -253,31 +264,52 @@ namespace Otel
         {
             btnalta.BackColor = Color.White;
         }
-        private void OdaBilgileriniYukle()
-        {
-            odaNumaralari = new Dictionary<string, List<string>>
-            {
-                { "Tek Kişilik", new List<string> { "101", "102", "103", "104" } },
-                { "İki Kişilik", new List<string> { "201", "202", "203", "204" } }
-            };
+          private void OdaBilgileriniYukle()
+          {
+              odaNumaralari = new Dictionary<string, List<string>>
+              {
+                  { "Tek Kişilik", new List<string> { "101", "102", "103", "104" } },
+                  { "İki Kişilik", new List<string> { "201", "202", "203", "204" } }
+              };
 
+
+              cmbOdaTipi.Items.AddRange(new string[] { "Tek Kişilik", "İki Kişilik" });
+
+          }
+
+
+          private void cmbOdaTipi_SelectedIndexChanged_1(object sender, EventArgs e)
+          {
             
-            cmbOdaTipi.Items.AddRange(new string[] { "Tek Kişilik", "İki Kişilik" });
-
+             string secilenOdaTipi = cmbOdaTipi.SelectedItem?.ToString();
+             if (secilenOdaTipi != null && odaNumaralari.ContainsKey(secilenOdaTipi))
+             {
+                 cmbOdaNumarasi.Items.Clear();
+                 cmbOdaNumarasi.Items.AddRange(odaNumaralari[secilenOdaTipi].ToArray());
+                 cmbOdaNumarasi.SelectedIndex = 0;
+             }
         }
-       
 
-        private void cmbOdaTipi_SelectedIndexChanged_1(object sender, EventArgs e)
+          private void cmbOdaNumarasi_SelectedIndexChanged(object sender, EventArgs e)
+          {
+
+          }
+
+        private void btnodagüncelle_Click(object sender, EventArgs e)
         {
             
-            string secilenOdaTipi = cmbOdaTipi.SelectedItem?.ToString();
-            if (secilenOdaTipi != null && odaNumaralari.ContainsKey(secilenOdaTipi))
-            {
-                cmbOdaNumarasi.Items.Clear();
-                cmbOdaNumarasi.Items.AddRange(odaNumaralari[secilenOdaTipi].ToArray());
-                cmbOdaNumarasi.SelectedIndex = 0; 
-            }
+            string odaDurum = txtodadurum.Text;
+            int odaNo = Convert.ToInt16( txtno.Text);
+
+
+            bool isUpdated = _bloda.rezguncelle(odaDurum,odaNo) ;
+
+            bloda bl1 = new bloda();
+            DataTable dt1 = bl1.dataiçinveriçek();
+            dataGridView1.DataSource = dt1;
         }
     }
+    }
 
-}
+
+

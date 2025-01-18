@@ -74,5 +74,35 @@ namespace Otel
         {
 
         }
+
+        private void btncikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnalt_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncikis_MouseMove(object sender, MouseEventArgs e)
+        {
+            btncikis.BackColor = Color.Red;
+        }
+
+        private void btncikis_MouseLeave(object sender, EventArgs e)
+        {
+            btncikis.BackColor = Color.White;
+        }
+
+        private void btnalt_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnalt.BackColor = Color.Red;
+        }
+
+        private void btnalt_MouseLeave(object sender, EventArgs e)
+        {
+            btnalt.BackColor = Color.White;
+        }
     }
 }

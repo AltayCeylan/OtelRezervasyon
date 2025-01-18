@@ -43,7 +43,7 @@ namespace Otel.DAL
         {
             using(MySqlConnection conn = new MySqlConnection(connectionstring))
             {
-                string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik,odaTipi=@tip where MusteriId=@ıd";
+                string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik,odaTipi=@tip where MusteriTc=@tc";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
               
                 cmd.Parameters.AddWithValue("@ad", musteriad);

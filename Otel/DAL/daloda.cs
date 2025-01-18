@@ -19,7 +19,7 @@ namespace Otel.DAL
         }
         public void odasil(int a)
         {
-            new MySqlCommand("delete from tbl_oda where odaNo="+a, (new dbBaglantı()).baglantıGetir()).ExecuteReader();
+            new MySqlCommand("delete from tbl_oda where odaNo=" + a, (new dbBaglantı()).baglantıGetir()).ExecuteReader();
         }
         public DataTable vericek()
         {
@@ -32,9 +32,32 @@ namespace Otel.DAL
                     adapter.Fill(dt);
                     return dt;
                 }
+
+            }
+           
+        }
+        public bool rezguncelle(string odaDurum,int odaNo)
+        {
+            using (MySqlConnection conn = new MySqlConnection("Server=172.21.54.253; Database=25_132330046; Uid=25_132330046; Pwd=!nif.ogr46CE"))
+            {
+                string query = "update tbl_oda set odaDurum=@durum where odaNo=@no";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@durum", odaDurum);
+                cmd.Parameters.AddWithValue("@no", odaNo);
+
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
             }
         }
-            
     }
-    
 }
+ 
+
+
+            
+    
+    
+
