@@ -18,6 +18,7 @@ namespace Otel
 
     public partial class anasayfa : Form
     {
+        private Dictionary<string, List<string>> odaNumaralari;
 
 
         private blrez _blrez = new blrez();
@@ -25,6 +26,7 @@ namespace Otel
         public anasayfa()
         {
             InitializeComponent();
+            OdaBilgileriniYukle();
 
         }
 
@@ -70,13 +72,13 @@ namespace Otel
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
         }
-       
+
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
 
-            
+
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -90,12 +92,13 @@ namespace Otel
             string musteriad = txtrezad.Text;
             string musterisoyad = txtrezsoy.Text;
             long musteriTc = Convert.ToInt64(mskreztc.Text);
-            int odaNo = Convert.ToInt32(txtrezoda.Text);
+            string odaNo = cmbOdaNumarasi.Text;
             string giris = dtgir.Text;
             string cikis = dtcik.Text;
+            string odaTipi=cmbOdaTipi.Text;
 
 
-            bool isUpdated = _blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad, musteriTc, odaNo, giris, cikis);
+            bool isUpdated = _blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad, musteriTc, odaNo, giris, cikis,odaTipi);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();
@@ -107,7 +110,7 @@ namespace Otel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text, Convert.ToInt64(mskreztc.Text), Convert.ToInt16(txtrezoda.Text), dtgir.Text, dtcik.Text);
+            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text, Convert.ToInt64(mskreztc.Text), cmbOdaNumarasi.Text, dtgir.Text, dtcik.Text,cmbOdaTipi.Text);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();
@@ -155,9 +158,10 @@ namespace Otel
             txtrezad.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
             txtrezsoy.Text = dataGridView2.Rows[secilen].Cells[1].Value.ToString();
             mskreztc.Text = dataGridView2.Rows[secilen].Cells[2].Value.ToString();
-            txtrezoda.Text = dataGridView2.Rows[secilen].Cells[3].Value.ToString();
+            cmbOdaNumarasi.Text = dataGridView2.Rows[secilen].Cells[3].Value.ToString();
             dtgir.Text = dataGridView2.Rows[secilen].Cells[4].Value.ToString();
             dtcik.Text = dataGridView2.Rows[secilen].Cells[5].Value.ToString();
+            cmbOdaTipi.Text = dataGridView2.Rows[secilen].Cells[6].Value.ToString();
 
 
 
@@ -205,14 +209,75 @@ namespace Otel
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
 
 
+
+        }
+
+        private void btncıkıs_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btncıkıs_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncıkıs_MouseMove(object sender, MouseEventArgs e)
+        {
+            btncıkıs.BackColor = Color.Red;
+        }
+
+        private void btncıkıs_MouseLeave(object sender, EventArgs e)
+        {
+            btncıkıs.BackColor = Color.White;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnalta_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnalta.BackColor = Color.Blue;
+        }
+
+        private void btnalta_MouseLeave(object sender, EventArgs e)
+        {
+            btnalta.BackColor = Color.White;
+        }
+        private void OdaBilgileriniYukle()
+        {
+            odaNumaralari = new Dictionary<string, List<string>>
+            {
+                { "Tek Kişilik", new List<string> { "101", "102", "103", "104" } },
+                { "İki Kişilik", new List<string> { "201", "202", "203", "204" } }
+            };
+
+            
+            cmbOdaTipi.Items.AddRange(new string[] { "Tek Kişilik", "İki Kişilik" });
+
+        }
+       
+
+        private void cmbOdaTipi_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            
+            string secilenOdaTipi = cmbOdaTipi.SelectedItem?.ToString();
+            if (secilenOdaTipi != null && odaNumaralari.ContainsKey(secilenOdaTipi))
+            {
+                cmbOdaNumarasi.Items.Clear();
+                cmbOdaNumarasi.Items.AddRange(odaNumaralari[secilenOdaTipi].ToArray());
+                cmbOdaNumarasi.SelectedIndex = 0; 
             }
         }
     }
+
+}

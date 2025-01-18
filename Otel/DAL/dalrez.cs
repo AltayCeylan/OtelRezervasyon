@@ -17,7 +17,7 @@ namespace Otel.DAL
         
             public void rezkaydet(elrez a)
             {
-                new MySqlCommand("insert into MUSTERİ (MusteriAd,MusteriSoyad,MusteriTc,odaNo,Giris,Cikis) values ('" + a.MUSTERİAD + "','" + a.MUSTERİSOYAD + "','" + a.MUSTERİTC + "','" + a.ODANO + "','" + a.GIRIS + "','" + a.CIKIS + "')", (new dbBaglantı()).baglantıGetir()).ExecuteReader();
+                new MySqlCommand("insert into MUSTERİ (MusteriAd,MusteriSoyad,MusteriTc,odaNo,Giris,Cikis,odaTipi) values ('" + a.MUSTERİAD + "','" + a.MUSTERİSOYAD + "','" + a.MUSTERİTC + "','" + a.ODANO + "','" + a.GIRIS + "','" + a.CIKIS +"','"+a.ODATİPİ +"')", (new dbBaglantı()).baglantıGetir()).ExecuteReader();
 
             }
             public void rezsil(long a)
@@ -28,7 +28,7 @@ namespace Otel.DAL
             {
                 using (MySqlConnection bgl = new MySqlConnection("Server=172.21.54.253; Database=25_132330046; Uid=25_132330046; Pwd=!nif.ogr46CE"))
                 {
-                    using (MySqlCommand komut = new MySqlCommand("select MusteriAd,MusteriSoyad,MusteriTc,odaNo,Giris,Cikis from MUSTERİ", bgl))
+                    using (MySqlCommand komut = new MySqlCommand("select MusteriAd,MusteriSoyad,MusteriTc,odaNo,Giris,Cikis,odaTipi from MUSTERİ", bgl))
                     {
                         MySqlDataAdapter adapter = new MySqlDataAdapter(komut);
                         DataTable dt = new DataTable();
@@ -39,11 +39,11 @@ namespace Otel.DAL
             }
         private string connectionstring = "Server=172.21.54.253; Database=25_132330046; Uid=25_132330046; Pwd=!nif.ogr46CE";
         
-        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
+        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, string odaNo, string giris, string cikis, string odaTipi)
         {
             using(MySqlConnection conn = new MySqlConnection(connectionstring))
             {
-                string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik where MusteriId=@ıd";
+                string query = "update MUSTERİ set MusteriAd=@ad,MusteriSoyad=@soyad,MusteriTc=@tc,odaNo=@no,Giris=@gir,Cikis=@cik,odaTipi=@tip where MusteriId=@ıd";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
               
                 cmd.Parameters.AddWithValue("@ad", musteriad);
@@ -52,6 +52,7 @@ namespace Otel.DAL
                 cmd.Parameters.AddWithValue("@no", odaNo);
                 cmd.Parameters.AddWithValue("@gir", giris);
                 cmd.Parameters.AddWithValue("@cik", cikis);
+                cmd.Parameters.AddWithValue("@tip", odaTipi);
 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery(); 

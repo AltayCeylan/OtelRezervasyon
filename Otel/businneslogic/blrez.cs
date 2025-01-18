@@ -12,10 +12,10 @@ namespace Otel.businneslogic
     internal class blrez
     {
       
-        internal void rezkaydet(  string musteriAd,string musteriSoyad,long musteriTc,int odaNo,string giris,string cikis)
+        internal void rezkaydet(  string musteriAd,string musteriSoyad,long musteriTc,string odaNo,string giris,string cikis,string odaTipi)
         {
 
-            (new dalrez()).rezkaydet(new elrez( musteriAd,musteriSoyad,musteriTc,odaNo,giris,cikis));
+            (new dalrez()).rezkaydet(new elrez( musteriAd,musteriSoyad,musteriTc,odaNo,giris,cikis,odaTipi));
         }
         internal void rezsil(long a)
         {
@@ -30,9 +30,9 @@ namespace Otel.businneslogic
         }
 
       private dalrez _dalrez= new dalrez();
-        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, int odaNo, string giris, string cikis)
+        public bool rezguncelle(/*int musteriId,*/ string musteriad, string musterisoyad, long musteriTc, string odaNo, string giris, string cikis, string odaTipi)
         {
-            return _dalrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad,musteriTc,odaNo, giris, cikis);
+            return _dalrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad,musteriTc,odaNo, giris, cikis,odaTipi);
         }
 
 

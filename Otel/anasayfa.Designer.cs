@@ -29,12 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtno = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnsil = new System.Windows.Forms.Button();
             this.btnregu = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnresil = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.mskreztc = new System.Windows.Forms.MaskedTextBox();
@@ -43,7 +38,6 @@
             this.dtcik = new System.Windows.Forms.DateTimePicker();
             this.dtgir = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtrezoda = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtrezad = new System.Windows.Forms.TextBox();
@@ -55,56 +49,25 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btncıkıs = new System.Windows.Forms.Button();
+            this.btnalta = new System.Windows.Forms.Button();
+            this.cmbOdaTipi = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbOdaNumarasi = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtno = new System.Windows.Forms.TextBox();
+            this.btnsil = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(4, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "oda ekle";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtno
-            // 
-            this.txtno.Location = new System.Drawing.Point(113, 272);
-            this.txtno.Name = "txtno";
-            this.txtno.Size = new System.Drawing.Size(129, 22);
-            this.txtno.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(21, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 34);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "ODA NO:";
-            // 
-            // btnsil
-            // 
-            this.btnsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsil.Location = new System.Drawing.Point(139, 313);
-            this.btnsil.Name = "btnsil";
-            this.btnsil.Size = new System.Drawing.Size(129, 58);
-            this.btnsil.TabIndex = 5;
-            this.btnsil.Text = "oda sil";
-            this.btnsil.UseVisualStyleBackColor = true;
-            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnregu
             // 
             this.btnregu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregu.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregu.Location = new System.Drawing.Point(732, 22);
+            this.btnregu.Location = new System.Drawing.Point(1037, 236);
             this.btnregu.Name = "btnregu";
             this.btnregu.Size = new System.Drawing.Size(129, 58);
             this.btnregu.TabIndex = 6;
@@ -112,26 +75,11 @@
             this.btnregu.UseVisualStyleBackColor = true;
             this.btnregu.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(346, 221);
-            this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
-            // 
             // btnresil
             // 
             this.btnresil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresil.Location = new System.Drawing.Point(732, 237);
+            this.btnresil.Location = new System.Drawing.Point(834, 236);
             this.btnresil.Name = "btnresil";
             this.btnresil.Size = new System.Drawing.Size(129, 58);
             this.btnresil.TabIndex = 8;
@@ -143,7 +91,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(732, 128);
+            this.button2.Location = new System.Drawing.Point(672, 236);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 58);
             this.button2.TabIndex = 8;
@@ -179,14 +127,14 @@
             // 
             // dtcik
             // 
-            this.dtcik.Location = new System.Drawing.Point(518, 273);
+            this.dtcik.Location = new System.Drawing.Point(785, 78);
             this.dtcik.Name = "dtcik";
             this.dtcik.Size = new System.Drawing.Size(200, 22);
             this.dtcik.TabIndex = 8;
             // 
             // dtgir
             // 
-            this.dtgir.Location = new System.Drawing.Point(513, 217);
+            this.dtgir.Location = new System.Drawing.Point(780, 22);
             this.dtgir.Name = "dtgir";
             this.dtgir.Size = new System.Drawing.Size(200, 22);
             this.dtgir.TabIndex = 7;
@@ -196,18 +144,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(384, 261);
+            this.label7.Location = new System.Drawing.Point(651, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 34);
             this.label7.TabIndex = 16;
             this.label7.Text = "ÇIKIŞ TARİHİ:";
-            // 
-            // txtrezoda
-            // 
-            this.txtrezoda.Location = new System.Drawing.Point(518, 164);
-            this.txtrezoda.Name = "txtrezoda";
-            this.txtrezoda.Size = new System.Drawing.Size(129, 22);
-            this.txtrezoda.TabIndex = 6;
             // 
             // label5
             // 
@@ -223,7 +164,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(383, 208);
+            this.label6.Location = new System.Drawing.Point(650, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 34);
             this.label6.TabIndex = 15;
@@ -250,7 +191,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(415, 164);
+            this.label3.Location = new System.Drawing.Point(415, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 34);
             this.label3.TabIndex = 11;
@@ -274,7 +215,7 @@
             this.lblsaat.BackColor = System.Drawing.Color.Transparent;
             this.lblsaat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblsaat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblsaat.Location = new System.Drawing.Point(955, 57);
+            this.lblsaat.Location = new System.Drawing.Point(737, 143);
             this.lblsaat.Name = "lblsaat";
             this.lblsaat.Size = new System.Drawing.Size(55, 23);
             this.lblsaat.TabIndex = 21;
@@ -286,7 +227,7 @@
             this.lbltarih.BackColor = System.Drawing.Color.Transparent;
             this.lbltarih.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbltarih.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbltarih.Location = new System.Drawing.Point(955, 23);
+            this.lbltarih.Location = new System.Drawing.Point(737, 109);
             this.lbltarih.Name = "lbltarih";
             this.lbltarih.Size = new System.Drawing.Size(82, 23);
             this.lbltarih.TabIndex = 22;
@@ -300,7 +241,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(885, 24);
+            this.label1.Location = new System.Drawing.Point(667, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 22);
             this.label1.TabIndex = 23;
@@ -310,11 +251,125 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(885, 58);
+            this.label9.Location = new System.Drawing.Point(667, 144);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 22);
             this.label9.TabIndex = 24;
             this.label9.Text = "SAAT:";
+            // 
+            // btncıkıs
+            // 
+            this.btncıkıs.BackColor = System.Drawing.Color.White;
+            this.btncıkıs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncıkıs.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncıkıs.Location = new System.Drawing.Point(1116, -1);
+            this.btncıkıs.Name = "btncıkıs";
+            this.btncıkıs.Size = new System.Drawing.Size(78, 36);
+            this.btncıkıs.TabIndex = 25;
+            this.btncıkıs.Text = "X";
+            this.btncıkıs.UseVisualStyleBackColor = false;
+            this.btncıkıs.Click += new System.EventHandler(this.btncıkıs_Click);
+            this.btncıkıs.MouseLeave += new System.EventHandler(this.btncıkıs_MouseLeave);
+            this.btncıkıs.MouseHover += new System.EventHandler(this.btncıkıs_MouseHover);
+            this.btncıkıs.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btncıkıs_MouseMove);
+            // 
+            // btnalta
+            // 
+            this.btnalta.BackColor = System.Drawing.Color.White;
+            this.btnalta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnalta.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnalta.Location = new System.Drawing.Point(1037, -1);
+            this.btnalta.Name = "btnalta";
+            this.btnalta.Size = new System.Drawing.Size(73, 36);
+            this.btnalta.TabIndex = 26;
+            this.btnalta.Text = "---";
+            this.btnalta.UseVisualStyleBackColor = false;
+            this.btnalta.Click += new System.EventHandler(this.button3_Click);
+            this.btnalta.MouseLeave += new System.EventHandler(this.btnalta_MouseLeave);
+            this.btnalta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnalta_MouseMove);
+            // 
+            // cmbOdaTipi
+            // 
+            this.cmbOdaTipi.FormattingEnabled = true;
+            this.cmbOdaTipi.Location = new System.Drawing.Point(518, 157);
+            this.cmbOdaTipi.Name = "cmbOdaTipi";
+            this.cmbOdaTipi.Size = new System.Drawing.Size(129, 24);
+            this.cmbOdaTipi.TabIndex = 27;
+            this.cmbOdaTipi.SelectedIndexChanged += new System.EventHandler(this.cmbOdaTipi_SelectedIndexChanged_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(406, 157);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 34);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "ODA TİPİ:";
+            // 
+            // cmbOdaNumarasi
+            // 
+            this.cmbOdaNumarasi.FormattingEnabled = true;
+            this.cmbOdaNumarasi.Location = new System.Drawing.Point(518, 209);
+            this.cmbOdaNumarasi.Name = "cmbOdaNumarasi";
+            this.cmbOdaNumarasi.Size = new System.Drawing.Size(129, 24);
+            this.cmbOdaNumarasi.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(21, 266);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 34);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "ODA NO:";
+            // 
+            // txtno
+            // 
+            this.txtno.Location = new System.Drawing.Point(113, 272);
+            this.txtno.Name = "txtno";
+            this.txtno.Size = new System.Drawing.Size(129, 22);
+            this.txtno.TabIndex = 2;
+            // 
+            // btnsil
+            // 
+            this.btnsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsil.Location = new System.Drawing.Point(139, 313);
+            this.btnsil.Name = "btnsil";
+            this.btnsil.Size = new System.Drawing.Size(129, 58);
+            this.btnsil.TabIndex = 5;
+            this.btnsil.Text = "oda sil";
+            this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(4, 313);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 58);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "oda ekle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(346, 221);
+            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // anasayfa
             // 
@@ -322,6 +377,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(1195, 535);
+            this.Controls.Add(this.cmbOdaNumarasi);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.cmbOdaTipi);
+            this.Controls.Add(this.btnalta);
+            this.Controls.Add(this.btncıkıs);
             this.Controls.Add(this.lbltarih);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblsaat);
@@ -338,7 +398,6 @@
             this.Controls.Add(this.dtgir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.txtrezoda);
             this.Controls.Add(this.txtno);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -347,26 +406,20 @@
             this.Controls.Add(this.btnregu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "anasayfa";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtno;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnsil;
         private System.Windows.Forms.Button btnregu;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtrezoda;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtrezad;
@@ -385,5 +438,15 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btncıkıs;
+        private System.Windows.Forms.Button btnalta;
+        private System.Windows.Forms.ComboBox cmbOdaTipi;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbOdaNumarasi;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtno;
+        private System.Windows.Forms.Button btnsil;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

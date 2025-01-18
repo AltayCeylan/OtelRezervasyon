@@ -13,9 +13,10 @@ namespace Otel.EntityLayer
         private string musteriaAd;
         private string musteriSoyad;
         private long musteriTc;
-        private int odaNo;
+        private string odaNo;
          private string giris;
         private string cikis;
+        private string odaTipi;
         
 
 
@@ -24,12 +25,13 @@ namespace Otel.EntityLayer
         public string MUSTERİAD { get { return musteriaAd; } set { musteriaAd = value; } }
         public string MUSTERİSOYAD { get { return musteriSoyad; } set { musteriSoyad = value; } }
         public long MUSTERİTC{ get { return musteriTc; } set { musteriTc = value; } }
-        public int ODANO { get { return odaNo; } set { odaNo = value; } }
+        public string ODANO { get { return odaNo; } set { odaNo = value; } }
         public string GIRIS { get { return giris; } set { giris = value; } }
         public string CIKIS { get { return cikis; } set { cikis = value; } }
-        
+        public string ODATİPİ { get { return odaTipi; } set { odaTipi = value; } }
 
-        public elrez(string musteriad,string musterisoyad,long musteriTc,int odaNo,string giris,string cikis)
+
+        public elrez(string musteriad,string musterisoyad,long musteriTc,string odaNo,string giris,string cikis,string odaTipi)
         {
            
             this.musteriaAd = musteriad;
@@ -38,12 +40,12 @@ namespace Otel.EntityLayer
             this.odaNo = odaNo;
             this.giris = giris;
             this.cikis = cikis;
-            
+            this.odaTipi= odaTipi;
 
         }
         public override string ToString()
         {
-            return this.musteriaAd+"-" + this.musteriSoyad+"-"+this.musteriTc+"-"+this.odaNo+"-"+this.giris+"-"+this.cikis;
+            return this.musteriaAd+"-" + this.musteriSoyad+"-"+this.musteriTc+"-"+this.odaNo+"-"+this.giris+"-"+this.cikis+"-"+this.odaTipi;
         }
     }
 }
