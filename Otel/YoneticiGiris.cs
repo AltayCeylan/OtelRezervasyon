@@ -97,7 +97,7 @@ namespace Otel
 
         private void btnalt_MouseMove(object sender, MouseEventArgs e)
         {
-            btnalt.BackColor = Color.Red;
+            btnalt.BackColor = Color.Blue;
         }
 
         private void btnalt_MouseLeave(object sender, EventArgs e)

@@ -227,7 +227,7 @@
             this.lblsaat.AutoSize = true;
             this.lblsaat.BackColor = System.Drawing.Color.Transparent;
             this.lblsaat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblsaat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblsaat.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblsaat.Location = new System.Drawing.Point(737, 143);
             this.lblsaat.Name = "lblsaat";
             this.lblsaat.Size = new System.Drawing.Size(55, 23);
@@ -239,7 +239,7 @@
             this.lbltarih.AutoSize = true;
             this.lbltarih.BackColor = System.Drawing.Color.Transparent;
             this.lbltarih.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbltarih.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbltarih.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbltarih.Location = new System.Drawing.Point(737, 109);
             this.lbltarih.Name = "lbltarih";
             this.lbltarih.Size = new System.Drawing.Size(82, 23);
@@ -426,9 +426,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.IndianRed;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1195, 552);
+            this.ClientSize = new System.Drawing.Size(1195, 575);
             this.Controls.Add(this.txtodadurum);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnodagüncelle);
