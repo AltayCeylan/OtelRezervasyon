@@ -63,6 +63,8 @@
             this.btnodagüncelle = new System.Windows.Forms.Button();
             this.txtodadurum = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txtfiyat = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +74,7 @@
             this.btnregu.BackColor = System.Drawing.Color.Transparent;
             this.btnregu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregu.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregu.Location = new System.Drawing.Point(1037, 236);
+            this.btnregu.Location = new System.Drawing.Point(1020, 233);
             this.btnregu.Name = "btnregu";
             this.btnregu.Size = new System.Drawing.Size(129, 58);
             this.btnregu.TabIndex = 6;
@@ -85,7 +87,7 @@
             this.btnresil.BackColor = System.Drawing.Color.Transparent;
             this.btnresil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresil.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresil.Location = new System.Drawing.Point(834, 236);
+            this.btnresil.Location = new System.Drawing.Point(866, 232);
             this.btnresil.Name = "btnresil";
             this.btnresil.Size = new System.Drawing.Size(129, 58);
             this.btnresil.TabIndex = 8;
@@ -98,7 +100,7 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(672, 236);
+            this.button2.Location = new System.Drawing.Point(708, 232);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 58);
             this.button2.TabIndex = 8;
@@ -213,11 +215,11 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(304, 313);
+            this.dataGridView2.Location = new System.Drawing.Point(274, 313);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(890, 210);
+            this.dataGridView2.Size = new System.Drawing.Size(920, 210);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -422,6 +424,24 @@
             this.label11.TabIndex = 32;
             this.label11.Text = "ODA DURUM:";
             // 
+            // txtfiyat
+            // 
+            this.txtfiyat.Location = new System.Drawing.Point(518, 255);
+            this.txtfiyat.Name = "txtfiyat";
+            this.txtfiyat.Size = new System.Drawing.Size(129, 22);
+            this.txtfiyat.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(436, 247);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 34);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "FİYAT:";
+            // 
             // anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,6 +449,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1195, 575);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtfiyat);
             this.Controls.Add(this.txtodadurum);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnodagüncelle);
@@ -508,5 +530,7 @@
         private System.Windows.Forms.Button btnodagüncelle;
         private System.Windows.Forms.TextBox txtodadurum;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtfiyat;
+        private System.Windows.Forms.Label label12;
     }
 }

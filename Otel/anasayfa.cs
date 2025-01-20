@@ -107,9 +107,10 @@ namespace Otel
             string giris = dtgir.Text;
             string cikis = dtcik.Text;
             string odaTipi=cmbOdaTipi.Text;
+            string fiyat=txtfiyat.Text;
 
 
-            bool isUpdated = _blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad, musteriTc, odaNo, giris, cikis,odaTipi);
+            bool isUpdated = _blrez.rezguncelle(/*musteriId,*/ musteriad, musterisoyad, musteriTc, odaNo, giris, cikis,odaTipi,fiyat);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();
@@ -121,7 +122,7 @@ namespace Otel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text, Convert.ToInt64(mskreztc.Text), cmbOdaNumarasi.Text, dtgir.Text, dtcik.Text,cmbOdaTipi.Text);
+            (new blrez()).rezkaydet(txtrezad.Text, txtrezsoy.Text, Convert.ToInt64(mskreztc.Text), cmbOdaNumarasi.Text, dtgir.Text, dtcik.Text,cmbOdaTipi.Text,txtfiyat.Text);
 
             blrez bl2 = new blrez();
             DataTable dt2 = bl2.dataiçinveriçek();

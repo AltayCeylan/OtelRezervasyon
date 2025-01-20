@@ -27,5 +27,35 @@ namespace Otel
         {
             (new blyoneticibilgi()).yoneticibilgiKaydet( txtkula.Text,txtbilsi.Text);
         }
+
+        private void btncıkıs_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnalta_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncıkıs_MouseMove(object sender, MouseEventArgs e)
+        {
+            btncıkıs.BackColor = Color.Red;
+        }
+
+        private void btncıkıs_MouseLeave(object sender, EventArgs e)
+        {
+            btncıkıs.BackColor= Color.White;
+        }
+
+        private void btnalta_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnalta.BackColor = Color.Blue;
+        }
+
+        private void btnalta_MouseLeave(object sender, EventArgs e)
+        {
+            btnalta.BackColor= Color.White;
+        }
     }
 }

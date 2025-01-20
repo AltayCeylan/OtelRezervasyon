@@ -49,7 +49,7 @@
             this.txtgirissif.Location = new System.Drawing.Point(461, 289);
             this.txtgirissif.Name = "txtgirissif";
             this.txtgirissif.Size = new System.Drawing.Size(190, 22);
-            this.txtgirissif.TabIndex = 1;
+            this.txtgirissif.TabIndex = 2;
             this.txtgirissif.UseSystemPasswordChar = true;
             // 
             // label2
@@ -72,7 +72,7 @@
             this.button1.Location = new System.Drawing.Point(403, 346);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 57);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Giriş";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -85,7 +85,7 @@
             this.button2.Location = new System.Drawing.Point(519, 346);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 57);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Kayıt Ol";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -96,7 +96,7 @@
             this.txtkullanıcı.Location = new System.Drawing.Point(461, 232);
             this.txtkullanıcı.Name = "txtkullanıcı";
             this.txtkullanıcı.Size = new System.Drawing.Size(190, 22);
-            this.txtkullanıcı.TabIndex = 6;
+            this.txtkullanıcı.TabIndex = 1;
             // 
             // label1
             // 
@@ -119,7 +119,7 @@
             this.btnalt.Location = new System.Drawing.Point(687, 12);
             this.btnalt.Name = "btnalt";
             this.btnalt.Size = new System.Drawing.Size(86, 43);
-            this.btnalt.TabIndex = 9;
+            this.btnalt.TabIndex = 6;
             this.btnalt.Text = "--";
             this.btnalt.UseVisualStyleBackColor = false;
             this.btnalt.Click += new System.EventHandler(this.btnalt_Click);
@@ -134,7 +134,7 @@
             this.btncikis.Location = new System.Drawing.Point(780, 12);
             this.btncikis.Name = "btncikis";
             this.btncikis.Size = new System.Drawing.Size(86, 43);
-            this.btncikis.TabIndex = 8;
+            this.btncikis.TabIndex = 5;
             this.btncikis.Text = "X";
             this.btncikis.UseVisualStyleBackColor = false;
             this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
