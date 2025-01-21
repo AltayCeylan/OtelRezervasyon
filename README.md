@@ -1,6 +1,6 @@
 # OtelRezervasyon
  OtelRezervasyon
-class diyagramı
+#class diyagramı
 ![classdiyagramı](https://github.com/user-attachments/assets/32241dba-0fd5-4ba3-bc96-0f4c3289b857)
 er diyagramı
 ![erdiyagramı](https://github.com/user-attachments/assets/2b96313f-067d-4070-aa4b-81d1e1b5fd3f)
