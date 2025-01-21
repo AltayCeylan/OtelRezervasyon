@@ -1,5 +1,8 @@
 # OtelRezervasyon
  OtelRezervasyon
-![classdiyagramı](https://github.com/user-attachments/assets/35ddf7bb-c0dc-4775-a3fe-cd98b2aea4ac)
-![erdiyagramı](https://github.com/user-attachments/assets/167b40b9-7498-42fa-a688-880d885c06d6)
-![use-case](https://github.com/user-attachments/assets/1b95f34d-a998-4f96-a5a0-b23f2a2f79b3)
+class diyagramı
+![classdiyagramı](https://github.com/user-attachments/assets/32241dba-0fd5-4ba3-bc96-0f4c3289b857)
+er diyagramı
+![erdiyagramı](https://github.com/user-attachments/assets/2b96313f-067d-4070-aa4b-81d1e1b5fd3f)
+use-case diyagramı
+![use-case](https://github.com/user-attachments/assets/06ef3a67-6f1c-4855-9910-9c2856ee988f)
