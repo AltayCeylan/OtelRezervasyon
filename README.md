@@ -9,7 +9,10 @@ Use-Case diyagramı
 
 Giriş Ekranı Formu
 
-![Ekran görüntüsü 2025-01-21 231855](https://github.com/user-attachments/assets/9fe78dca-1143-4074-aeca-b1d5bb8c9195)
+![Ekran görüntüsü 2025-01-21 233719](https://github.com/user-attachments/assets/ff6ca01d-c1b1-416e-8c71-3bc1debe58b0)
+
+
+Kullanıcıda
 
 Anasayfa Ekranı Formu
 
