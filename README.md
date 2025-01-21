@@ -11,9 +11,6 @@ Giriş Ekranı Formu
 
 ![Ekran görüntüsü 2025-01-21 233719](https://github.com/user-attachments/assets/ff6ca01d-c1b1-416e-8c71-3bc1debe58b0)
 
-
-Kullanıcıda
-
 Anasayfa Ekranı Formu
 
 ![anasayfa](https://github.com/user-attachments/assets/55cead6a-ac01-4768-9e3e-af69273f06fd)
