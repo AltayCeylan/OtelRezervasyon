@@ -20,7 +20,7 @@ Kullanıcıadı ve şifre bilgilerini girerek anasayfaya yönlendirilir.Kullanı
 
 # Anasayfa Ekranı Formu
 
-![anasayfa](https://github.com/user-attachments/assets/55cead6a-ac01-4768-9e3e-af69273f06fd)
+![Ekran görüntüsü 2025-01-23 143359](https://github.com/user-attachments/assets/5c7a6c1f-f51b-4878-bcc9-62f398f0351b)
 
 Bu sayfada rezervaston ekleme,silme,güncelleme ve aktif rezervasyonları görme sağlanır.Aynı şekilde oda ekleme,silme,güncelleme ve odaları görüntüleme sağlanır.
 
