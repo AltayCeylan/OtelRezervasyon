@@ -1,10 +1,15 @@
 # OtelRezervasyon
  OtelRezervasyon
-Class diyagramı
+
+Youtube Video Link:https://www.youtube.com/watch?v=Ndaqz7ut3Sw
+ 
+#Class diyagramı
 ![classdiyagramı](https://github.com/user-attachments/assets/32241dba-0fd5-4ba3-bc96-0f4c3289b857)
-Er diyagramı
+
+#Er diyagramı
 ![erdiyagramı](https://github.com/user-attachments/assets/2b96313f-067d-4070-aa4b-81d1e1b5fd3f)
-Use-Case diyagramı
+
+#Use-Case diyagramı
 ![use-case](https://github.com/user-attachments/assets/06ef3a67-6f1c-4855-9910-9c2856ee988f)
 
 Giriş Ekranı Formu
